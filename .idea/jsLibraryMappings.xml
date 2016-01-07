@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$" libraries="{Node.js v5.3.0 Core Modules}" />
-    <includedPredefinedLibrary name="Node.js Globals" />
+    <file url="file://$PROJECT_DIR$" libraries="{dailychef group node_modules}" />
   </component>
 </project>
