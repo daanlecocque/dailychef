@@ -17,20 +17,23 @@ position:relative;
 	
 }
 
-#header-text{
+.header-text{
 text-align: center;
 color:white;
 display:inline;
 }
 
-#menu{
-	float: left;
-	color:white;
+.menu{
+	color: #FFF;
 	margin:.2% .2% .2% .2%;
 	padding:1% 1% 1% 1%;
-	border: 2px groove #803f00 ;
-	position: relative;
-	display:inline;
+	background-color: #d9534f;
+	border-radius: 4px;
+}
+
+.menu li
+{
+	color: #fff;
 }
 
 #login{
