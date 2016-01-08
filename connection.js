@@ -1,10 +1,10 @@
 var mysql = require("mysql");
 // Create connection with db
 var con = mysql.createConnection({
-    host: 'camelotexcalibur.nl',
-    user: 'camelot_kok',
-    password: 'koketen1',
-    database: 'camelot_kok',
+    host: 'sql4.freesqldatabase.com',
+    user: 'sql4102332',
+    password: '5itRXDkz15',
+    database: 'sql4102332',
     dateStrings: 'date',
 });
 
