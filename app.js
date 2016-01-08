@@ -9,7 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var login = require('./routes/login');
 var day = require('./routes/day');
-
+var week = require('./routes/week');
 var app = express();
 
 // view engine setup
@@ -28,6 +28,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/day', day);
+app.use('/week', week);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
