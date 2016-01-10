@@ -1,6 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+var data =[];
+var cook =[];
+var numPeople=[];
+var comments =[];
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('week', { title: 'Express' });
@@ -18,7 +23,7 @@ function getSQL(callback) {
 
         for (var i = 0; i < results.length; i++) {
             arr[i] = results[i];
-            console.log(results[i]);
+            console.log(results[i].date);
         }
         callback(arr);
         // console.log(arr);
@@ -30,7 +35,32 @@ function getSQL(callback) {
 
 
 getSQL(function (arr) {
+    console.log(arr);
+    for (i = 0; i < arr.length; i++) {
+        date[i] = arr[i].Date;
+        cook[i] = arr[i].Date;
+        numPeople[]=arr[i].Date;;
+        comments[]=arr[i].Date;;
 
+        }
+    }
+
+
+
+/*
+    res.render('index', {
+        title: 'Where is the party?',
+        curDatum: datum,
+        nummer4: length,
+        curNaam: lnaam,
+        curBijnaam: lbijnaam,
+        curLocatie: locatie,
+        curKudos: kudo,
+    });
+    newInput = [];
+
+});
+*/
 });
 
 
