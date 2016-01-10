@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var data =[];
+var date =[];
 var cook =[];
 var numPeople=[];
 var comments =[];
@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 //random
 var con = require('./../connection');
 function getSQL(callback) {
-    var query = con.query('SELECT * FROM sql4102332.attendees, sql4102332.users WHERE sql4102332.attendees.userid =sql4102332.users.userid', function (err, results, fields) {
+    var query = con.query('SELECT * FROM sql4102332.attendees, sql4102332.dinner WHERE sql4102332.attendees.date =sql4102332.dinner.date', function (err, results, fields) {
         if (err)
             throw err;
         // `results` is an array with one element for every statement in the query:
@@ -36,14 +36,15 @@ function getSQL(callback) {
 
 getSQL(function (arr) {
     console.log(arr);
+
     for (i = 0; i < arr.length; i++) {
-        date[i] = arr[i].Date;
-        cook[i] = arr[i].Date;
-        numPeople[]=arr[i].Date;;
-        comments[]=arr[i].Date;;
+        date[i] = arr[i].date;
+        cook[i] = arr[i].date;
+        numPeople[i]=arr[i].date;;
+        comments[i]=arr[i].date;;
 
         }
-    }
+
 
 
 
