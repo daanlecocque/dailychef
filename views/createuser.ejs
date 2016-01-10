@@ -1,0 +1,64 @@
+<%include templates/header.ejs %>
+
+<div class="jumbotron">
+    <div class="container">
+
+        <p>Fill in the data to create a user</p>
+        <div class="row">
+            <div id="addUser" class=".col-md-12">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Name:</label>
+                        <div class="col-md-10">
+                            <input type="text" placeholder="Kees" id="addContactName">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Surname:</label>
+                        <div class="col-md-10">
+                            <input type="text" placeholder="Janssen" id="addContactSurname">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Password:</label>
+                        <div class="col-md-10">
+                            <input type="password" id="password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Allergy:</label>
+                        <div class="col-md-10">
+                            <input type="text" placeholder="Nuts" id="allergy">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Phonenumber:</label>
+                        <div class="col-md-10">
+                            <input type="text" placeholder="0612345678" id="addContactPhoneNumber">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Email:</label>
+                        <div class="col-md-10">
+                            <input type="email" placeholder="example@host.com" id="addContactEmail">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button type="button" class="btn btn-danger" id="addContactButton">Add User</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<%include templates/footer.ejs %>
