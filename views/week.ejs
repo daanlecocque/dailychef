@@ -1,43 +1,79 @@
-<%include templates/header.ejs %>
+<% include templates/header.ejs %>
 
 <div class="container">
 
-    <table class="table table-bordered table_style" >
+    <table class="table table-bordered table_style" cellspacing="100">
         <thead>
-            <th>Datum</th>
-            <th>Day</th>
-            <th>Cock</th>
-            <th>#People</th>
+        <div class="row">
+            <th class="col-sm-1">Date</th>
+            <th class="col-sm-1">Day</th>
+            <th class="col-sm-2">Cook</th>
+            <th class="col-sm-2">#People</th>
+            <th class="col-sm-5">Comments</th>
+        </div>
         </thead>
 
         <tbody>
-            <tr>
-                <td>11-01</td>
-                <td>Maandag</td>
-                <td>Bart</td>
-                <td>8</td>
-            </tr>
+        <tr>
+            <td>11-01</td>
+            <td>Maandag</td>
+            <td>Bart</td>
+            <td>8</td>
+            <td>Subscribing possible till 6</td>
+        </tr>
 
-            <tr>
-                <td>12-01</td>
-                <td>Dinsdag</td>
-                <td>Barrie</td>
-                <td>10</td>
-            </tr>
+        <tr>
+            <td>12-01</td>
+            <td>Dinsdag</td>
+            <td>Barrie</td>
+            <td>10</td>
+            <td>Unfinished dishes.</td>
+        </tr>
 
-            <tr>
-                <td>13-01</td>
-                <td>Woensdag</td>
-                <td>Bart</td>
-                <td>8</td>
-            </tr>
+        <tr>
+            <td>13-01</td>
+            <td>Woensdag</td>
+            <td>Bart</td>
+            <td>8</td>
+            <td>Today we are eating at 7</td>
+        </tr>
 
-            <tr>
-                <td>12-01</td>
-                <td>Donderdag</td>
-                <td>Daan</td>
-                <td>9</td>
-            </tr>
+        <tr>
+            <td>14-01</td>
+            <td>Donderdag</td>
+            <td>
+                <button type="button" class="btn btn-success">Subscribe</button>
+            </td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>15-01</td>
+            <td>Vrijdag</td>
+            <td>
+                <button type="button" class="btn btn-success">Subscribe</button>
+            </td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>16-01</td>
+            <td>Zaterdag</td>
+            <td>
+                <button type="button" class="btn btn-success">Subscribe</button>
+            </td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>17-01</td>
+            <td>Zondag</td>
+            <td>
+                <button type="button" class="btn btn-success">Subscribe</button>
+            </td>
+            <td>9</td>
+            <td>We are going to grab some dönner.</td>
+        </tr>
 
         </tbody>
     </table>

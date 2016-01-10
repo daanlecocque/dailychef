@@ -24,11 +24,17 @@ display:inline;
 }
 
 .menu{
-	color: #FFF;
+	color: #fff;
 	margin:.2% .2% .2% .2%;
 	padding:1% 1% 1% 1%;
-	background-color: #d9534f;
+	background-color: #337ab7;
 	border-radius: 4px;
+	font-size: 16px;
+}
+
+.menu a
+{
+	color: #fff;
 }
 
 .menu li
@@ -88,8 +94,30 @@ body {
 }
 
 /*Styling for the table in the weekview*/
+.table_style
+{
+	table-border: 10px;
+	border: 10px;
+	margin-top: 10px;
+	border-spacing: 2px;
+	border-collapse: separate;
+}
+
+
+.table_style td
+{
+	height: 60px;
+	background-color: #5bc0de;
+	border-radius: 4px;
+	color: #fff;
+}
+
 .table_style thead
 {
 	text-align: center;
 	text-decoration: solid;
+	background-color: #337ab7;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 16px;
 }
