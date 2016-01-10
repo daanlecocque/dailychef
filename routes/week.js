@@ -39,12 +39,14 @@ getSQL(function (arr) {
 
     for (i = 0; i < arr.length; i++) {
         date[i] = arr[i].date;
+        
         cook[i] = arr[i].chef;
         numPeople[i]=arr[i].userid.length;
         comments[i]=arr[i].comment;;
         }
 
-    console.log(numPeople);
+
+    console.log(date.length);
 
 
 /*
