@@ -23,7 +23,7 @@ function getSQL(callback) {
 
         for (var i = 0; i < results.length; i++) {
             arr[i] = results[i];
-            console.log(results[i].date);
+            //console.log(results[i].date);
         }
         callback(arr);
         // console.log(arr);
@@ -39,13 +39,12 @@ getSQL(function (arr) {
 
     for (i = 0; i < arr.length; i++) {
         date[i] = arr[i].date;
-        cook[i] = arr[i].date;
-        numPeople[i]=arr[i].date;;
-        comments[i]=arr[i].date;;
-
+        cook[i] = arr[i].chef;
+        numPeople[i]=arr[i].userid.length;
+        comments[i]=arr[i].comment;;
         }
 
-
+    console.log(numPeople);
 
 
 /*
