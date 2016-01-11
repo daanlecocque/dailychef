@@ -8,7 +8,14 @@ var comments =[];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('week', { title: 'Express' });
+
+    getSQL(function (arr) {
+
+        res.render('week', {
+            title: 'Express',
+            result: arr
+        });
+    });
 });
 
 //random
@@ -33,20 +40,19 @@ function getSQL(callback) {
     })
 }
 
-
 getSQL(function (arr) {
     console.log(arr);
 
     for (i = 0; i < arr.length; i++) {
         date[i] = arr[i].date;
-        
+
         cook[i] = arr[i].chef;
-        numPeople[i]=arr[i].userid.length;
+        numPeople[i]=arr[i].userid;
         comments[i]=arr[i].comment;;
         }
 
 
-    console.log(date.length);
+    console.log(numPeople);
 
 
 /*
